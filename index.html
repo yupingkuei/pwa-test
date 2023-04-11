@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{/* <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -34,4 +34,25 @@
 
 </body>
 
+</html> */}}
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>PWA TEST</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="manifest" href="./manifest.json">
+    </head>
+    <body>
+        <pre id="app"></pre>
+        <script src="https://www.pushcode.jp/dist/js/pushcode.js"></script>
+        <script>
+            if (PushCode.isSupport()) {
+                PushCode.init({ domainToken: '9674fc710cfaa5c5e9f936132850d9e5f801d2164bfe090c361b8668fd60656c', userid: '' });
+                PushCode.requestPermission();
+            }
+        </script>
+    </body>
 </html>
