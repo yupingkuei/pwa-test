@@ -1,58 +1,37 @@
-{{/* <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>pushcode test env</title>
-    <script defer type="module" src="https://bpadmin.test.edocode.co.jp/dist/pushcode-components/index.esm.js"></script>
-    <script defer type="module"
-        src="https://bpadmin.test.edocode.co.jp/dist/pushcode-components/pushcode-components.esm.js"></script>
-    <link rel="manifest" href="./manifest.json">
     <script defer src="https://bpadmin.test.edocode.co.jp/dist/js/pushcode.js"></script>
+    <script defer type="module" src="https://bpadmin.test.edocode.co.jp/dist/pushcode-components/index.esm.js"></script>
+    <script defer type="module" src="https://bpadmin.test.edocode.co.jp/dist/pushcode-components/pushcode-components.esm.js"></script>
+    <script defer nomodule="" src="https://bpadmin.test.edocode.co.jp/dist/pushcode-components/pushcode-components.js"></script>
+    <link rel="manifest" href="/manifest.json">
     <script>
-        window.addEventListener('load', function () {
-            try {
-                if (PushCode && PushCode.isSupport()) {
-                    PushCode.init({ domainToken: '9674fc710cfaa5c5e9f936132850d9e5f801d2164bfe090c361b8668fd60656c', userid: '' });
-                    if (PushCode.components) {
-                        PushCode.components.openSubscribeDialog();
-                    } else {
-                        PushCode.requestPermission();
-                    }
-                }
-            }
-            catch (err) {
-                console.error(err);
-            }
-        });
+    window.addEventListener('load', function() {
+    try {
+        if (PushCode && PushCode.isSupport()) {
+        PushCode.init({ domainToken: 'ae11dcd51e7122a8158f456bb1c29228044757b792f51ee51ebacd43b24c024b', userid: '' });
+        if (PushCode.components) {
+            PushCode.components.openSubscribeDialog();
+        } else {
+            PushCode.requestPermission();
+        }
+        }
+    }
+    catch (err) {
+        console.error(err);
+    }
+    });
     </script>
 </head>
 
 <body>
 
-    <h1>pushcode test env</h1>
+    <h1>pwa test hithub</h1>
     <p>🥳🥳🥳</p>
 
 </body>
 
-</html> */}}
-
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>PWA TEST</title>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="manifest" href="./manifest.json">
-    </head>
-    <body>
-        <pre id="app"></pre>
-        <script src="https://www.pushcode.jp/dist/js/pushcode.js"></script>
-        <script>
-            if (PushCode.isSupport()) {
-                PushCode.init({ domainToken: '9674fc710cfaa5c5e9f936132850d9e5f801d2164bfe090c361b8668fd60656c', userid: '' });
-                PushCode.requestPermission();
-            }
-        </script>
-    </body>
 </html>
