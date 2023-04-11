@@ -1,0 +1,18 @@
+{
+    "short_name": "pwa-test",
+    "name": "pwa-test long name",
+    "icons": [
+        {
+            "src": "icon_small.png",
+            "type": "image/png",
+            "sizes": "50x50"
+        },
+        {
+            "src": "icon_original.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone"
+}
